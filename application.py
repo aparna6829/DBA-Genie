@@ -168,7 +168,7 @@ with tab2:
     postgres_password = st.text_input("Postgres Password", type="password",key="test12")
     if st.button("Submit Details:"):
         extracted_oracle_details = extract_db_details(connection_prompt)
-        print(extracted_oracle_details)
+        st.write(extracted_oracle_details)
         if extracted_oracle_details:
             # Map the extracted details to the format expected by process_database_connection
             st.session_state.user_inputs = {
