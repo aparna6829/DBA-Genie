@@ -56,7 +56,6 @@ from langchain.prompts import PromptTemplate
 import re
 import pandas as pd
 from langchain_community.llms.huggingface_endpoint import HuggingFaceEndpoint
-from langchain_ollama import ChatOllama
 
 GOOGLE_API_KEY = st.secrets["GEMINI_KEY"]
 

@@ -21,13 +21,9 @@ import json
 from tables import extract_columns_to_config1, migrate_table_structures, migrate_data, get_system_info, calculate_dynamic_values, load_or_create_migrated_tables, migrate_complete_data, get_oracle_object_counts, get_postgres_object_counts
 from validation import getall_oracle_objects,getall_postgres_objects,identify_oracle_only_objects1,identify_oracle_only_objects,merge_table_counts,display_validation, get_oracle_table_counts, get_postgres_table_counts, timelines,query_database002
 import os
-from langchain_community.llms import LlamaCpp
 import cx_Oracle
-import pandas as pd
-import webbrowser
 import psycopg2
 import logging
-import streamlit.components.v1 as components
 error_messages=[]
 
 
