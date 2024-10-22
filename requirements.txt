@@ -6,4 +6,4 @@ langchain_openai
 langchain_huggingface
 langchain_google_genai
 cx_Oracle
-psycopg2
+psycopg2-binary
