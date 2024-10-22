@@ -1,5 +1,5 @@
 langchain 
-streamlit
+streamlit==1.38.0
 langchain
 langchain_community
 langchain_openai
