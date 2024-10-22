@@ -1,10 +1,10 @@
 from langchain.chains.llm import LLMChain
 from langchain.prompts import PromptTemplate
-
+import streamlit as st
 from langchain_community.llms.huggingface_endpoint import HuggingFaceEndpoint
 import pandas as pd
 
-llm_hub= HuggingFaceEndpoint(repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1",huggingfacehub_api_token="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")
+llm_hub= HuggingFaceEndpoint(repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1",huggingfacehub_api_token=st.secrets["HUGGINGFACE_KEY"])
 # llm_hub=ChatOllama(model="mistral:latest", temperature=0.2)
 code=""" import cx_Oracle
 import psycopg2
