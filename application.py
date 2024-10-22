@@ -93,7 +93,7 @@ with tab1:
         ]
     with st.container(height=420,border=0):
         llm = ChatOpenAI(model='gpt-4o', api_key=st.secrets["OPENAIAPI_KEY"])
-        embedding_path=r"C:\github\GenAI\DBA-Genie\DBA"
+        embedding_path="DBA"
         # Initialize the language model
         embeddings = HuggingFaceEmbeddings()
         
