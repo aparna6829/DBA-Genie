@@ -8,3 +8,5 @@ langchain_google_genai
 cx_Oracle
 psycopg2-binary
 sqlparse
+faiss-cpu
+sentence-transformers
