@@ -1,5 +1,0 @@
-[server]
-enableStaticServing = true
-port = 3030
-[browser]
-
