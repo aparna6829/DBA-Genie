@@ -5,4 +5,4 @@ langchain_community
 langchain_openai
 langchain_huggingface
 langchain_google_genai
-cx_oracle
+cx_Oracle
