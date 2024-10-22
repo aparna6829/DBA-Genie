@@ -1,0 +1,51 @@
+{
+  "FUNCTION": {
+    "count": 1,
+    "invalid": 0,
+    "estimated_cost": 1,
+    "comments": "Oracle functions may use features not directly supported in PostgreSQL, requiring code adaptations and potentially data type conversions.",
+    "details": "1. Analyze Oracle function code for unsupported features (e.g., PL/SQL-specific constructs, data types). 2. Implement equivalent functionality using PostgreSQL's SQL and PL/pgSQL. 3. Map Oracle data types to compatible PostgreSQL equivalents. 4. Test the migrated function thoroughly to ensure correctness and performance."
+  },
+  "INDEX": {
+    "count": 22,
+    "invalid": 0,
+    "estimated_cost": 5.5,
+    "comments": "Migrating 22 indexes may encounter differences in syntax, index types, and potential performance issues due to varying query optimizers.",
+    "details": "1. Analyze Oracle index definitions and map them to equivalent PostgreSQL index types (e.g., B-tree, GIN, GIST). 2. Use pg_dump and pg_restore for schema migration, ensuring accurate index creation. 3. Benchmark PostgreSQL performance after migration and adjust index configurations or query plans if necessary."
+  },
+  "PROCEDURE": {
+    "count": 2,
+    "invalid": 0,
+    "estimated_cost": 6,
+    "comments": "Oracle and PostgreSQL have different syntax and data types, requiring code adjustments and potential data type conversions.",
+    "details": "1. **Syntax conversion:** Use tools like pgloader or manual code rewriting to adapt Oracle PL/SQL to PostgreSQL's SQL syntax. 2. **Data type mapping:**  Map Oracle data types to their PostgreSQL equivalents, handling potential data loss or precision issues. 3. **Function and Package Handling:** Migrate Oracle functions and packages as separate PostgreSQL functions or stored procedures."
+  },
+  "SEQUENCE": {
+    "count": 5,
+    "invalid": 0,
+    "estimated_cost": 0.5,
+    "comments": "Oracle and PostgreSQL have different sequence implementations.  Mapping Oracle's `NEXTVAL`, `CURRVAL`, and `CACHE` options might require adjustments in PostgreSQL.",
+    "details": "1. Migrate Oracle sequences to PostgreSQL sequences, ensuring the `start_value`, `increment_by`, and `max_value` are correctly mapped. 2. Use PostgreSQL's `nextval()` function to simulate Oracle's `NEXTVAL` behavior. 3. Adjust application code to use `currval()` function for accessing the last generated value. 4. Consider using `cache` option in PostgreSQL sequences to improve performance, but be aware of potential concurrency issues."
+  },
+  "TABLE": {
+    "count": 12,
+    "invalid": 0,
+    "estimated_cost": 24,
+    "comments": "Migrating 12 tables from Oracle to PostgreSQL can be complex due to potential data type mismatches, function/procedure differences, and schema design variations.",
+    "details": "1. **Data Type Mapping:** Carefully map Oracle data types to PostgreSQL equivalents, handling potential loss of precision or functionality. 2. **Function/Procedure Migration:**  Convert Oracle PL/SQL functions and procedures to PostgreSQL functions and stored procedures. 3. **Schema Design Review:**  Analyze the schema of each table and adapt it to PostgreSQL's best practices. 4. **Data Conversion:**  Use tools like pgloader or SQL*Loader to efficiently transfer data, handling any necessary data conversions. 5. **Testing and Validation:**  Thoroughly test the migrated database to ensure data integrity and application compatibility."
+  },
+  "TYPE": {
+    "count": 1,
+    "invalid": 0,
+    "estimated_cost": 1,
+    "comments": "Oracle's `NUMBER` type has high precision and can be tricky to map to PostgreSQL's `NUMERIC` or `DECIMAL` due to precision limitations.",
+    "details": "For high-precision `NUMBER` columns, use PostgreSQL's `NUMERIC` with appropriate precision and scale. For less precise values, `DECIMAL` may be sufficient. Consider using `BIGINT` for integer values. Ensure data type conversion handles potential loss of precision."
+  },
+  "VIEW": {
+    "count": 5,
+    "invalid": 0,
+    "estimated_cost": 5,
+    "comments": "Migrating Oracle views to PostgreSQL may involve differences in syntax, data types, and function availability. Careful analysis and adjustments are needed.",
+    "details": "1. **Syntax Conversion:**  Use tools or manual conversion to adapt Oracle SQL to PostgreSQL's syntax. 2. **Data Type Mapping:**  Map Oracle data types to their PostgreSQL equivalents. 3. **Function Equivalents:**  Identify and replace Oracle functions with their PostgreSQL counterparts. 4. **View Dependencies:**  Analyze and address dependencies between views, ensuring proper migration order. 5. **Testing:**  Thoroughly test migrated views to ensure they function as expected in PostgreSQL."
+  }
+}

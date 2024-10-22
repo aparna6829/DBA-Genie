@@ -1,0 +1,101 @@
+
+    <html>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; }
+            table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .schema-info { margin-bottom: 20px; }
+            .object-type { font-weight: bold; margin-top: 20px; }
+        </style>
+    </head>
+    <body>
+        <h1>Oracle to Postgres - Database Migration Report</h1>
+        <div class="schema-info">
+            <p><strong>Version:</strong> Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production</p>
+            <p><strong>Schema:</strong> HR</p>
+            <p><strong>Size:</strong> 4.44MB</p>
+        </div>
+        <table>
+            <tr>
+                <th>Object</th>
+                <th>Number</th>
+                <th>Invalid</th>
+                <th>Estimated cost</th>
+                <th>Comments</th>
+                <th>Migration Solutions</th>
+            </tr>
+    
+            <tr>
+                <td>FUNCTION</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>Migrating Oracle functions to PostgreSQL may involve syntax differences, data type discrepancies, and handling of Oracle-specific features.</td>
+                <td>1. Analyze the function's logic and rewrite it using PostgreSQL syntax. 2. Map Oracle data types to their PostgreSQL equivalents. 3. Utilize PostgreSQL extensions or custom code to replicate Oracle-specific features. 4. Test thoroughly to ensure functionality and performance are maintained.</td>
+            </tr>
+        
+            <tr>
+                <td>INDEX</td>
+                <td>22</td>
+                <td>0</td>
+                <td>5.5</td>
+                <td>Migrating 22 indexes can be complex due to differences in indexing syntax, data types, and potential performance implications.</td>
+                <td>1. **Analyze index definitions:** Compare Oracle and PostgreSQL syntax, ensuring equivalent functionality. 2. **Map data types:** Account for potential type differences and ensure accurate conversions. 3. **Test performance:** Benchmark index performance after migration and optimize for PostgreSQL's specific characteristics. 4. **Consider index partitioning:** Explore partitioning strategies for large tables to improve query performance and reduce index size.</td>
+            </tr>
+        
+            <tr>
+                <td>PROCEDURE</td>
+                <td>2</td>
+                <td>0</td>
+                <td>6</td>
+                <td>Oracle and PostgreSQL have different syntax, data types, and function libraries. Migrating procedures may require code adjustments and potentially rewriting.</td>
+                <td>1. Use a migration tool that maps Oracle objects and syntax to PostgreSQL equivalents. 2. Manually translate the procedure code, paying attention to data type conversions and function replacements. 3. Test the migrated procedures thoroughly to ensure functionality and data integrity.</td>
+            </tr>
+        
+            <tr>
+                <td>SEQUENCE</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0.5</td>
+                <td>Oracle and PostgreSQL have different sequence management syntax and behavior. Ensuring proper mapping and handling of sequence values is crucial.</td>
+                <td>1. Map Oracle sequences to PostgreSQL sequences using equivalent `CREATE SEQUENCE` statements.
+2. Handle potential value discrepancies by adjusting starting values or using custom logic to synchronize sequences.
+3. Implement trigger functions on PostgreSQL tables to ensure consistent sequence value updates.</td>
+            </tr>
+        
+            <tr>
+                <td>TABLE</td>
+                <td>12</td>
+                <td>0</td>
+                <td>24</td>
+                <td>Migrating 12 tables from Oracle to PostgreSQL can be challenging due to data type differences, function/procedure variations, and potential for complex data relationships.</td>
+                <td>1. **Data Type Mapping:** Carefully map Oracle data types to their PostgreSQL equivalents, ensuring compatibility and data integrity. 2. **Function/Procedure Conversion:** Rewrite Oracle functions/procedures using PostgreSQL equivalents, considering potential differences in syntax and functionality. 3. **Data Relationship Mapping:** Analyze and map complex data relationships, including foreign keys and constraints, to maintain data integrity during migration. 4. **Data Validation:** Perform thorough data validation after migration to ensure data accuracy and consistency across both systems.</td>
+            </tr>
+        
+            <tr>
+                <td>TYPE</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>Oracle's `NUMBER` type can be tricky to migrate to PostgreSQL, as it offers more precision and scale options than PostgreSQL's `NUMERIC` type.</td>
+                <td>For high-precision values, use PostgreSQL's `NUMERIC` type. For values requiring greater precision than `NUMERIC` offers, consider using a custom data type or explore third-party libraries. Ensure data type conversion logic accounts for potential data loss or rounding issues.</td>
+            </tr>
+        
+            <tr>
+                <td>VIEW</td>
+                <td>5</td>
+                <td>0</td>
+                <td>5</td>
+                <td>Migrating Oracle views to PostgreSQL might involve differences in syntax, data types, and function availability.</td>
+                <td>1. **Syntax Differences:** Carefully map Oracle SQL syntax to PostgreSQL equivalents, especially for functions and operators. 
+2. **Data Type Mapping:** Ensure accurate conversion of Oracle data types to PostgreSQL counterparts, considering precision and size differences. 
+3. **Function Equivalents:** Identify and replace Oracle-specific functions with their PostgreSQL equivalents, leveraging the PostgreSQL documentation for available alternatives. 
+4. **Testing:** Thoroughly test migrated views against expected results using sample data and edge cases to identify and resolve any discrepancies.</td>
+            </tr>
+        
+        </table>
+    </body>
+    </html>
+    

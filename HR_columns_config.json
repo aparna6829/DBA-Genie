@@ -1,0 +1,278 @@
+{
+  "COUNTRIES": [
+    {
+      "column": "COUNTRY_ID",
+      "datatype": "CHAR"
+    },
+    {
+      "column": "COUNTRY_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "REGION_ID",
+      "datatype": "NUMBER"
+    }
+  ],
+  "EMPLOYEES": [
+    {
+      "column": "EMPLOYEE_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "FIRST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LAST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "EMAIL",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PHONE_NUMBER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "HIRE_DATE",
+      "datatype": "DATE"
+    },
+    {
+      "column": "JOB_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SALARY",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "COMMISSION_PCT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "MANAGER_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DEPARTMENT_ID",
+      "datatype": "NUMBER"
+    }
+  ],
+  "JOBS": [
+    {
+      "column": "JOB_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "JOB_TITLE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "MIN_SALARY",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "MAX_SALARY",
+      "datatype": "NUMBER"
+    }
+  ],
+  "JOB_HISTORY": [
+    {
+      "column": "EMPLOYEE_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "START_DATE",
+      "datatype": "DATE"
+    },
+    {
+      "column": "END_DATE",
+      "datatype": "DATE"
+    },
+    {
+      "column": "JOB_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DEPARTMENT_ID",
+      "datatype": "NUMBER"
+    }
+  ],
+  "LEADERS": [
+    {
+      "column": "EMPLOYEE_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "FIRST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LAST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "EMAIL",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PHONE_NUMBER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "HIRE_DATE",
+      "datatype": "DATE"
+    },
+    {
+      "column": "JOB_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SALARY",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "COMMISSION_PCT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "MANAGER_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DEPARTMENT_ID",
+      "datatype": "NUMBER"
+    }
+  ],
+  "LOCATIONS": [
+    {
+      "column": "LOCATION_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "STREET_ADDRESS",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "POSTAL_CODE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "CITY",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "STATE_PROVINCE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "COUNTRY_ID",
+      "datatype": "CHAR"
+    }
+  ],
+  "MY_TABLE": [
+    {
+      "column": "ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "GEOMETRY_COLUMN",
+      "datatype": "SDO_GEOMETRY"
+    }
+  ],
+  "NEW_EMPLOYEES": [
+    {
+      "column": "EMPLOYEE_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "FIRST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LAST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "EMAIL",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PHONE_NUMBER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "HIRE_DATE",
+      "datatype": "DATE"
+    },
+    {
+      "column": "JOB_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SALARY",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "COMMISSION_PCT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "MANAGER_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DEPARTMENT_ID",
+      "datatype": "NUMBER"
+    }
+  ],
+  "REGIONS": [
+    {
+      "column": "REGION_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "REGION_NAME",
+      "datatype": "VARCHAR2"
+    }
+  ],
+  "SPATIAL_KEYWORDS": [
+    {
+      "column": "ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "KEYWORDS",
+      "datatype": "SDO_KEYWORDARRAY"
+    }
+  ],
+  "SPATIAL_TABLE": [
+    {
+      "column": "ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "GEOM",
+      "datatype": "SDO_GEOMETRY"
+    }
+  ],
+  "TERRAIN_POINTS": [
+    {
+      "column": "OGC_FID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "WKB_GEOMETRY",
+      "datatype": "SDO_GEOMETRY"
+    },
+    {
+      "column": "ELEVATION",
+      "datatype": "NUMBER"
+    }
+  ]
+}

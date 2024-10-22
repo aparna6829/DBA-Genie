@@ -1,0 +1,522 @@
+{
+  "ABSENTDETECTED": [
+    {
+      "column": "ANIMAL_SK",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "TAG_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ORGANIZATION_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ORGANIZATION_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LOCATIONID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LOCATION_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ENCLOSUREID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ENCLOSURE_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LAST_SEEN_DAY",
+      "datatype": "DATE"
+    },
+    {
+      "column": "ABSENT_DAY",
+      "datatype": "DATE"
+    },
+    {
+      "column": "ABSENT_DAY_US_FORMAT",
+      "datatype": "DATE"
+    },
+    {
+      "column": "ACTUAL_DETECTED_DAY",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DETECTED_DAY",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DAYS_BETWEEN_LAST_SEEN_AND_ABSENT_DAY",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DAYS_ABSENT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_SECONDS",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_MINUTES",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_MI_SS",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "MIN_SCAN_START_TIME_LOCAL",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "MAX_SCAN_END_TIME_LOCAL",
+      "datatype": "VARCHAR2"
+    }
+  ],
+  "ACCOUNTS": [
+    {
+      "column": "ACCOUNT_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "ACCOUNT_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "BALANCE",
+      "datatype": "NUMBER"
+    }
+  ],
+  "CUSTOMERS": [
+    {
+      "column": "CUSTOMER_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "CUSTOMER_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "EMAIL",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PHONE_NUMBER",
+      "datatype": "VARCHAR2"
+    }
+  ],
+  "FRIENDS": [
+    {
+      "column": "FULL_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "GENDER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "CONTACT",
+      "datatype": "VARCHAR2"
+    }
+  ],
+  "HERDEXDATA": [
+    {
+      "column": "ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LOCATIONID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LOCATION",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ORGANIZATIONID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ORGNAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ENCLOSUREID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ENCLOSURETYPE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "BREED",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "BREEDER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "CAUSEOFDELETE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "IMFLASTUPDATE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "INTRAMUSCULARFAT",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LOTID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PURCHASEDATE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "RECEIVINGDATE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "MONTH",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "RFID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SECONDARYID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SEX",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SIRE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "TREATMENTWITHREMINDER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "UNDERTREATMENT",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "WEIGHTINPOUNDORLBS",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "WEIGHTLASTUPDATE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "RECEIVEDINMONTHS",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "INITIALWEIGHTINPOUNDORLBS",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DIFFERENCEINWEIGHT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "PRICEINUSDPERPOUNDORLBS",
+      "datatype": "VARCHAR2"
+    }
+  ],
+  "ORDERS": [
+    {
+      "column": "ORDER_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "CUSTOMER_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "PRODUCT_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "ORDER_DATE",
+      "datatype": "DATE"
+    }
+  ],
+  "PRODUCTS": [
+    {
+      "column": "PRODUCT_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "PRODUCT_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PRICE",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DESCRIPTION",
+      "datatype": "VARCHAR2"
+    }
+  ],
+  "SALARIES": [
+    {
+      "column": "EMPLOYEE_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "EMPLOYEE_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DEPARTMENT",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SALARY",
+      "datatype": "NUMBER"
+    }
+  ],
+  "STUDENTS": [
+    {
+      "column": "STUDENT_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "FIRST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LAST_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "MONEY",
+      "datatype": "NUMBER"
+    }
+  ],
+  "TAGSCANDATA": [
+    {
+      "column": "\u00cfD",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "ANIMAL_SK",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "READER_SK",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "TAG_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "READER_ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ORGANIZATION",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LOCATION",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SCAN_DATE",
+      "datatype": "DATE"
+    },
+    {
+      "column": "SCAN_START_TIME_UTC_DATE_KEY",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DAILY_TIME_SPENT_SECONDS",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DAILY_TIME_SPENT_MINUTES",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "MAX_TAGSCAN_SK",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "REC_COUNT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "DW_CREATED_DTTIME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DW_UPDATED_DTTIME",
+      "datatype": "VARCHAR2"
+    }
+  ],
+  "TEAM": [
+    {
+      "column": "EMPLOYEE_ID",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "EMPLOYEE_NAME",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "C",
+      "datatype": "BLOB"
+    },
+    {
+      "column": "D",
+      "datatype": "CLOB"
+    }
+  ],
+  "TREATMENTDETAILS": [
+    {
+      "column": "ID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ISDELETED",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DELETEDDATE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LASTUPDATED",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "CREATEDBY",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LASTUPDATEDBY",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DELETEDBY",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ANIMALID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "AUTOREMINDER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DESCRIPTION",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "CREATEDAT",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "DOSELOGCOUNT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "ORGANIZATION",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "LOCATION",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ENCLOSURE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "ISFROMPROTOCOL",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "MEDICINECOUNT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "TREATMENTMEDICINES",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PRESCRIPTIONDATE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "PRESCRIPTIONNOTES",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "REMINDER",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "REMINDERCOUNT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "TREATMENTID",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "TREATMENTTYPE",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "SICKNESSDETAILS",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "WEEK1WEIGHT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "WEEK2WEIGHT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "WEEK3WEIGHT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "WEEK4WEIGHT",
+      "datatype": "NUMBER"
+    },
+    {
+      "column": "LASTMONTHSICK",
+      "datatype": "VARCHAR2"
+    },
+    {
+      "column": "RECOVEREDINCURRENTMONTH",
+      "datatype": "VARCHAR2"
+    }
+  ]
+}

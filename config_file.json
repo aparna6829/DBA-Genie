@@ -1,0 +1,992 @@
+{
+    "PRODUCTS": {
+        "columns": [
+            {
+                "column_name": "PRODUCT_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PRODUCT_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PRODUCT_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "PRODUCT_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 1020
+            },
+            {
+                "column_name": "PROD_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "UNIT_PRICE",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PRICE",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_DESC",
+                "data_type": "VARCHAR2",
+                "data_length": 4000
+            },
+            {
+                "column_name": "PRODUCT_DETAILS",
+                "data_type": "BLOB",
+                "data_length": 4000
+            },
+            {
+                "column_name": "PROD_SUBCATEGORY",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "DESCRIPTION",
+                "data_type": "VARCHAR2",
+                "data_length": 200
+            },
+            {
+                "column_name": "PRODUCT_IMAGE",
+                "data_type": "BLOB",
+                "data_length": 4000
+            },
+            {
+                "column_name": "PROD_SUBCATEGORY_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_SUBCATEGORY_DESC",
+                "data_type": "VARCHAR2",
+                "data_length": 2000
+            },
+            {
+                "column_name": "IMAGE_MIME_TYPE",
+                "data_type": "VARCHAR2",
+                "data_length": 2048
+            },
+            {
+                "column_name": "PROD_CATEGORY",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "IMAGE_FILENAME",
+                "data_type": "VARCHAR2",
+                "data_length": 2048
+            },
+            {
+                "column_name": "PROD_CATEGORY_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "IMAGE_CHARSET",
+                "data_type": "VARCHAR2",
+                "data_length": 2048
+            },
+            {
+                "column_name": "IMAGE_LAST_UPDATED",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "PROD_CATEGORY_DESC",
+                "data_type": "VARCHAR2",
+                "data_length": 2000
+            },
+            {
+                "column_name": "PROD_WEIGHT_CLASS",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_UNIT_OF_MEASURE",
+                "data_type": "VARCHAR2",
+                "data_length": 20
+            },
+            {
+                "column_name": "PROD_PACK_SIZE",
+                "data_type": "VARCHAR2",
+                "data_length": 30
+            },
+            {
+                "column_name": "SUPPLIER_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_STATUS",
+                "data_type": "VARCHAR2",
+                "data_length": 20
+            },
+            {
+                "column_name": "PROD_LIST_PRICE",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_MIN_PRICE",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_TOTAL",
+                "data_type": "VARCHAR2",
+                "data_length": 13
+            },
+            {
+                "column_name": "PROD_TOTAL_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_SRC_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PROD_EFF_FROM",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "PROD_EFF_TO",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "PROD_VALID",
+                "data_type": "VARCHAR2",
+                "data_length": 1
+            }
+        ],
+        "row_count": 4
+    },
+    "FRIENDS": {
+        "columns": [
+            {
+                "column_name": "FULL_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 35
+            },
+            {
+                "column_name": "GENDER",
+                "data_type": "VARCHAR2",
+                "data_length": 15
+            },
+            {
+                "column_name": "CONTACT",
+                "data_type": "VARCHAR2",
+                "data_length": 15
+            }
+        ],
+        "row_count": 1
+    },
+    "CUSTOMERS": {
+        "columns": [
+            {
+                "column_name": "CUST_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUSTOMER_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUSTOMER_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUSTOMER_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "CUST_FIRST_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 20
+            },
+            {
+                "column_name": "EMAIL_ADDRESS",
+                "data_type": "VARCHAR2",
+                "data_length": 1020
+            },
+            {
+                "column_name": "EMAIL",
+                "data_type": "VARCHAR2",
+                "data_length": 100
+            },
+            {
+                "column_name": "FULL_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 1020
+            },
+            {
+                "column_name": "CUST_LAST_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 40
+            },
+            {
+                "column_name": "CUST_GENDER",
+                "data_type": "CHAR",
+                "data_length": 1
+            },
+            {
+                "column_name": "PHONE_NUMBER",
+                "data_type": "VARCHAR2",
+                "data_length": 20
+            },
+            {
+                "column_name": "CUST_YEAR_OF_BIRTH",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUST_MARITAL_STATUS",
+                "data_type": "VARCHAR2",
+                "data_length": 20
+            },
+            {
+                "column_name": "CUST_STREET_ADDRESS",
+                "data_type": "VARCHAR2",
+                "data_length": 40
+            },
+            {
+                "column_name": "CUST_POSTAL_CODE",
+                "data_type": "VARCHAR2",
+                "data_length": 10
+            },
+            {
+                "column_name": "CUST_CITY",
+                "data_type": "VARCHAR2",
+                "data_length": 30
+            },
+            {
+                "column_name": "CUST_CITY_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUST_STATE_PROVINCE",
+                "data_type": "VARCHAR2",
+                "data_length": 40
+            },
+            {
+                "column_name": "CUST_STATE_PROVINCE_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "COUNTRY_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUST_MAIN_PHONE_NUMBER",
+                "data_type": "VARCHAR2",
+                "data_length": 25
+            },
+            {
+                "column_name": "CUST_INCOME_LEVEL",
+                "data_type": "VARCHAR2",
+                "data_length": 30
+            },
+            {
+                "column_name": "CUST_CREDIT_LIMIT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUST_EMAIL",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "CUST_TOTAL",
+                "data_type": "VARCHAR2",
+                "data_length": 14
+            },
+            {
+                "column_name": "CUST_TOTAL_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUST_SRC_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUST_EFF_FROM",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "CUST_EFF_TO",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "CUST_VALID",
+                "data_type": "VARCHAR2",
+                "data_length": 1
+            }
+        ],
+        "row_count": 3
+    },
+    "ORDERS": {
+        "columns": [
+            {
+                "column_name": "ORDER_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "ORDER_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "ORDER_TMS",
+                "data_type": "TIMESTAMP(6)",
+                "data_length": 11
+            },
+            {
+                "column_name": "CUSTOMER_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PRODUCT_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "CUSTOMER_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "ORDER_DATE",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "ORDER_STATUS",
+                "data_type": "VARCHAR2",
+                "data_length": 40
+            },
+            {
+                "column_name": "STORE_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            }
+        ],
+        "row_count": 3
+    },
+    "SALARIES": {
+        "columns": [
+            {
+                "column_name": "EMPLOYEE_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "EMPLOYEE_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "DEPARTMENT",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "SALARY",
+                "data_type": "NUMBER",
+                "data_length": 22
+            }
+        ],
+        "row_count": 4
+    },
+    "TEAM": {
+        "columns": [
+            {
+                "column_name": "EMPLOYEE_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "EMPLOYEE_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "C",
+                "data_type": "BLOB",
+                "data_length": 4000
+            },
+            {
+                "column_name": "D",
+                "data_type": "CLOB",
+                "data_length": 4000
+            }
+        ],
+        "row_count": 1
+    },
+    "ACCOUNTS": {
+        "columns": [
+            {
+                "column_name": "ACCOUNT_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "ACCOUNT_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 100
+            },
+            {
+                "column_name": "BALANCE",
+                "data_type": "NUMBER",
+                "data_length": 22
+            }
+        ],
+        "row_count": 4
+    },
+    "ABSENTDETECTED": {
+        "columns": [
+            {
+                "column_name": "ANIMAL_SK",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "TAG_ID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ORGANIZATION_ID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ORGANIZATION_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LOCATIONID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LOCATION_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ENCLOSUREID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ENCLOSURE_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LAST_SEEN_DAY",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "ABSENT_DAY",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "ABSENT_DAY_US_FORMAT",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "ACTUAL_DETECTED_DAY",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "DETECTED_DAY",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "DAYS_BETWEEN_LAST_SEEN_AND_ABSENT_DAY",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "DAYS_ABSENT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_SECONDS",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_MINUTES",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_MI_SS",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "MIN_SCAN_START_TIME_LOCAL",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "MAX_SCAN_END_TIME_LOCAL",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            }
+        ],
+        "row_count": 4725
+    },
+    "HERDEXDATA": {
+        "columns": [
+            {
+                "column_name": "ID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LOCATIONID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LOCATION",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ORGANIZATIONID",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "ORGNAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ENCLOSUREID",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "ENCLOSURETYPE",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "BREED",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "BREEDER",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "CAUSEOFDELETE",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "IMFLASTUPDATE",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "INTRAMUSCULARFAT",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LOTID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "PURCHASEDATE",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "RECEIVINGDATE",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "MONTH",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "RFID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "SECONDARYID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "SEX",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "SIRE",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "TREATMENTWITHREMINDER",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "UNDERTREATMENT",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "WEIGHTINPOUNDORLBS",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "WEIGHTLASTUPDATE",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "RECEIVEDINMONTHS",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "INITIALWEIGHTINPOUNDORLBS",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "DIFFERENCEINWEIGHT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "PRICEINUSDPERPOUNDORLBS",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            }
+        ],
+        "row_count": 15077
+    },
+    "TAGSCANDATA": {
+        "columns": [
+            {
+                "column_name": "\u00cfD",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "ANIMAL_SK",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "READER_SK",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "TAG_ID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "READER_ID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ORGANIZATION",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LOCATION",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "SCAN_DATE",
+                "data_type": "DATE",
+                "data_length": 7
+            },
+            {
+                "column_name": "SCAN_START_TIME_UTC_DATE_KEY",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "DAILY_TIME_SPENT_SECONDS",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "DAILY_TIME_SPENT_MINUTES",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "MAX_TAGSCAN_SK",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "REC_COUNT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "DW_CREATED_DTTIME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "DW_UPDATED_DTTIME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            }
+        ],
+        "row_count": 183508
+    },
+    "TREATMENTDETAILS": {
+        "columns": [
+            {
+                "column_name": "ID",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "ISDELETED",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "DELETEDDATE",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "LASTUPDATED",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "CREATEDBY",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "LASTUPDATEDBY",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "DELETEDBY",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "ANIMALID",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "AUTOREMINDER",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "DESCRIPTION",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "CREATEDAT",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "DOSELOGCOUNT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "ORGANIZATION",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "LOCATION",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ENCLOSURE",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "ISFROMPROTOCOL",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "MEDICINECOUNT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "TREATMENTMEDICINES",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "PRESCRIPTIONDATE",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "PRESCRIPTIONNOTES",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "REMINDER",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "REMINDERCOUNT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "TREATMENTID",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "TREATMENTTYPE",
+                "data_type": "VARCHAR2",
+                "data_length": 128
+            },
+            {
+                "column_name": "SICKNESSDETAILS",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "WEEK1WEIGHT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "WEEK2WEIGHT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "WEEK3WEIGHT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "WEEK4WEIGHT",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "LASTMONTHSICK",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "RECOVEREDINCURRENTMONTH",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            }
+        ],
+        "row_count": 530
+    },
+    "STUDENTS": {
+        "columns": [
+            {
+                "column_name": "STUDENT_ID",
+                "data_type": "NUMBER",
+                "data_length": 22
+            },
+            {
+                "column_name": "FIRST_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "LAST_NAME",
+                "data_type": "VARCHAR2",
+                "data_length": 50
+            },
+            {
+                "column_name": "MONEY",
+                "data_type": "NUMBER",
+                "data_length": 22
+            }
+        ],
+        "row_count": 2
+    }
+}

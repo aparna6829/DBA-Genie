@@ -1,0 +1,96 @@
+
+    <html>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; }
+            table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .schema-info { margin-bottom: 20px; }
+            .object-type { font-weight: bold; margin-top: 20px; }
+        </style>
+    </head>
+    <body>
+        <h1>Oracle to Postgres - Database Migration Report</h1>
+        <div class="schema-info">
+            <p><strong>Version:</strong> Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production</p>
+            <p><strong>Schema:</strong> HR</p>
+            <p><strong>Size:</strong> 4.44MB</p>
+        </div>
+        <table>
+            <tr>
+                <th>Object</th>
+                <th>Number</th>
+                <th>Invalid</th>
+                <th>Estimated cost</th>
+                <th>Comments</th>
+                <th>Migration Solutions</th>
+            </tr>
+    
+            <tr>
+                <td>FUNCTION</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>Migrating Oracle functions to PostgreSQL might involve differences in syntax, data types, and function capabilities.</td>
+                <td>1. **Syntax Conversion:** Use PostgreSQL's equivalent functions and syntax. Refer to PostgreSQL documentation for function syntax and supported data types. 2. **Data Type Mapping:** Map Oracle data types to their PostgreSQL counterparts. Consider using type casting for compatibility. 3. **Function Capabilities:** Identify and address any differences in function capabilities between Oracle and PostgreSQL. Use alternative functions or modify logic for compatibility.</td>
+            </tr>
+        
+            <tr>
+                <td>INDEX</td>
+                <td>22</td>
+                <td>0</td>
+                <td>5.5</td>
+                <td>Migrating 22 indexes can be challenging due to potential differences in syntax and index types between Oracle and PostgreSQL.  Also, index performance may vary.</td>
+                <td>1.  Use PostgreSQL's CREATE INDEX syntax, considering index types like B-tree, GIN, and GIST. 2.  Thoroughly test index performance in PostgreSQL after migration. 3.  Use migration tools like pgloader or pgAdmin to automate index creation and minimize manual effort.</td>
+            </tr>
+        
+            <tr>
+                <td>PROCEDURE</td>
+                <td>2</td>
+                <td>0</td>
+                <td>6</td>
+                <td>Oracle and PostgreSQL have different syntax and features. Migrating procedures might require code adjustments, especially for advanced PL/SQL constructs.</td>
+                <td>1. Use a migration tool or script to automatically convert the Oracle SQL and PL/SQL code to PostgreSQL syntax. 2. Manually review and adjust the converted code, focusing on differences in data types, function names, and control flow structures. 3. Test the migrated procedures thoroughly to ensure they function correctly in the PostgreSQL environment.</td>
+            </tr>
+        
+            <tr>
+                <td>SEQUENCE</td>
+                <td>5</td>
+                <td>0</td>
+                <td>0.5</td>
+                <td>Oracle and PostgreSQL have different sequence implementations. The main challenge is ensuring consistent sequence values after migration.</td>
+                <td>1. **Identify the current sequence values in Oracle.** 2. **Create equivalent sequences in PostgreSQL with the same starting values.** 3. **Use the `nextval()` function in PostgreSQL to retrieve the next sequence value and insert it into the corresponding table.** 4. **Update the `last_value` property of the PostgreSQL sequence to match the last value used in Oracle. This ensures consistent sequence values across both databases.</td>
+            </tr>
+        
+            <tr>
+                <td>TABLE</td>
+                <td>12</td>
+                <td>0</td>
+                <td>24</td>
+                <td>Migrating 12 tables from Oracle to PostgreSQL can be challenging due to potential data type mismatches, complex SQL queries, and differing database features.</td>
+                <td>1. Map Oracle data types to their PostgreSQL equivalents. 2. Analyze and rewrite complex Oracle SQL queries to be compatible with PostgreSQL. 3. Use tools like pgloader or pgAdmin to automate data migration. 4. Implement a phased approach, starting with smaller tables and gradually migrating larger ones.</td>
+            </tr>
+        
+            <tr>
+                <td>TYPE</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>Migrating Oracle's NUMBER type to PostgreSQL's NUMERIC can be tricky due to differences in precision and scale handling.</td>
+                <td>Map Oracle's NUMBER with precision and scale to PostgreSQL's NUMERIC with equivalent precision and scale. For very high precision, consider using DECIMAL. Leverage tools like pgloader for efficient data migration and schema mapping.</td>
+            </tr>
+        
+            <tr>
+                <td>VIEW</td>
+                <td>5</td>
+                <td>0</td>
+                <td>5</td>
+                <td>Potential challenges include differences in syntax, data types, and function availability between Oracle and PostgreSQL.</td>
+                <td>1. Convert Oracle-specific syntax to PostgreSQL equivalents. 2. Map Oracle data types to their PostgreSQL counterparts. 3.  Utilize PostgreSQL functions and extensions to replicate Oracle-specific functionality. 4. Test the migrated views thoroughly to ensure data integrity and functionality.</td>
+            </tr>
+        
+        </table>
+    </body>
+    </html>
+    

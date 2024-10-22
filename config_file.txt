@@ -1,0 +1,222 @@
+Table: PRODUCTS
+  Row Count: 4
+  Column: PRODUCT_ID, Type: NUMBER, Length: 22
+  Column: PROD_ID, Type: NUMBER, Length: 22
+  Column: PRODUCT_ID, Type: NUMBER, Length: 22
+  Column: PRODUCT_NAME, Type: VARCHAR2, Length: 50
+  Column: PRODUCT_NAME, Type: VARCHAR2, Length: 1020
+  Column: PROD_NAME, Type: VARCHAR2, Length: 50
+  Column: UNIT_PRICE, Type: NUMBER, Length: 22
+  Column: PRICE, Type: NUMBER, Length: 22
+  Column: PROD_DESC, Type: VARCHAR2, Length: 4000
+  Column: PRODUCT_DETAILS, Type: BLOB, Length: 4000
+  Column: PROD_SUBCATEGORY, Type: VARCHAR2, Length: 50
+  Column: DESCRIPTION, Type: VARCHAR2, Length: 200
+  Column: PRODUCT_IMAGE, Type: BLOB, Length: 4000
+  Column: PROD_SUBCATEGORY_ID, Type: NUMBER, Length: 22
+  Column: PROD_SUBCATEGORY_DESC, Type: VARCHAR2, Length: 2000
+  Column: IMAGE_MIME_TYPE, Type: VARCHAR2, Length: 2048
+  Column: PROD_CATEGORY, Type: VARCHAR2, Length: 50
+  Column: IMAGE_FILENAME, Type: VARCHAR2, Length: 2048
+  Column: PROD_CATEGORY_ID, Type: NUMBER, Length: 22
+  Column: IMAGE_CHARSET, Type: VARCHAR2, Length: 2048
+  Column: IMAGE_LAST_UPDATED, Type: DATE, Length: 7
+  Column: PROD_CATEGORY_DESC, Type: VARCHAR2, Length: 2000
+  Column: PROD_WEIGHT_CLASS, Type: NUMBER, Length: 22
+  Column: PROD_UNIT_OF_MEASURE, Type: VARCHAR2, Length: 20
+  Column: PROD_PACK_SIZE, Type: VARCHAR2, Length: 30
+  Column: SUPPLIER_ID, Type: NUMBER, Length: 22
+  Column: PROD_STATUS, Type: VARCHAR2, Length: 20
+  Column: PROD_LIST_PRICE, Type: NUMBER, Length: 22
+  Column: PROD_MIN_PRICE, Type: NUMBER, Length: 22
+  Column: PROD_TOTAL, Type: VARCHAR2, Length: 13
+  Column: PROD_TOTAL_ID, Type: NUMBER, Length: 22
+  Column: PROD_SRC_ID, Type: NUMBER, Length: 22
+  Column: PROD_EFF_FROM, Type: DATE, Length: 7
+  Column: PROD_EFF_TO, Type: DATE, Length: 7
+  Column: PROD_VALID, Type: VARCHAR2, Length: 1
+
+Table: FRIENDS
+  Row Count: 1
+  Column: FULL_NAME, Type: VARCHAR2, Length: 35
+  Column: GENDER, Type: VARCHAR2, Length: 15
+  Column: CONTACT, Type: VARCHAR2, Length: 15
+
+Table: CUSTOMERS
+  Row Count: 3
+  Column: CUST_ID, Type: NUMBER, Length: 22
+  Column: CUSTOMER_ID, Type: NUMBER, Length: 22
+  Column: CUSTOMER_ID, Type: NUMBER, Length: 22
+  Column: CUSTOMER_NAME, Type: VARCHAR2, Length: 50
+  Column: CUST_FIRST_NAME, Type: VARCHAR2, Length: 20
+  Column: EMAIL_ADDRESS, Type: VARCHAR2, Length: 1020
+  Column: EMAIL, Type: VARCHAR2, Length: 100
+  Column: FULL_NAME, Type: VARCHAR2, Length: 1020
+  Column: CUST_LAST_NAME, Type: VARCHAR2, Length: 40
+  Column: CUST_GENDER, Type: CHAR, Length: 1
+  Column: PHONE_NUMBER, Type: VARCHAR2, Length: 20
+  Column: CUST_YEAR_OF_BIRTH, Type: NUMBER, Length: 22
+  Column: CUST_MARITAL_STATUS, Type: VARCHAR2, Length: 20
+  Column: CUST_STREET_ADDRESS, Type: VARCHAR2, Length: 40
+  Column: CUST_POSTAL_CODE, Type: VARCHAR2, Length: 10
+  Column: CUST_CITY, Type: VARCHAR2, Length: 30
+  Column: CUST_CITY_ID, Type: NUMBER, Length: 22
+  Column: CUST_STATE_PROVINCE, Type: VARCHAR2, Length: 40
+  Column: CUST_STATE_PROVINCE_ID, Type: NUMBER, Length: 22
+  Column: COUNTRY_ID, Type: NUMBER, Length: 22
+  Column: CUST_MAIN_PHONE_NUMBER, Type: VARCHAR2, Length: 25
+  Column: CUST_INCOME_LEVEL, Type: VARCHAR2, Length: 30
+  Column: CUST_CREDIT_LIMIT, Type: NUMBER, Length: 22
+  Column: CUST_EMAIL, Type: VARCHAR2, Length: 50
+  Column: CUST_TOTAL, Type: VARCHAR2, Length: 14
+  Column: CUST_TOTAL_ID, Type: NUMBER, Length: 22
+  Column: CUST_SRC_ID, Type: NUMBER, Length: 22
+  Column: CUST_EFF_FROM, Type: DATE, Length: 7
+  Column: CUST_EFF_TO, Type: DATE, Length: 7
+  Column: CUST_VALID, Type: VARCHAR2, Length: 1
+
+Table: ORDERS
+  Row Count: 3
+  Column: ORDER_ID, Type: NUMBER, Length: 22
+  Column: ORDER_ID, Type: NUMBER, Length: 22
+  Column: ORDER_TMS, Type: TIMESTAMP(6), Length: 11
+  Column: CUSTOMER_ID, Type: NUMBER, Length: 22
+  Column: PRODUCT_ID, Type: NUMBER, Length: 22
+  Column: CUSTOMER_ID, Type: NUMBER, Length: 22
+  Column: ORDER_DATE, Type: DATE, Length: 7
+  Column: ORDER_STATUS, Type: VARCHAR2, Length: 40
+  Column: STORE_ID, Type: NUMBER, Length: 22
+
+Table: SALARIES
+  Row Count: 4
+  Column: EMPLOYEE_ID, Type: NUMBER, Length: 22
+  Column: EMPLOYEE_NAME, Type: VARCHAR2, Length: 50
+  Column: DEPARTMENT, Type: VARCHAR2, Length: 50
+  Column: SALARY, Type: NUMBER, Length: 22
+
+Table: TEAM
+  Row Count: 1
+  Column: EMPLOYEE_ID, Type: NUMBER, Length: 22
+  Column: EMPLOYEE_NAME, Type: VARCHAR2, Length: 50
+  Column: C, Type: BLOB, Length: 4000
+  Column: D, Type: CLOB, Length: 4000
+
+Table: ACCOUNTS
+  Row Count: 4
+  Column: ACCOUNT_ID, Type: NUMBER, Length: 22
+  Column: ACCOUNT_NAME, Type: VARCHAR2, Length: 100
+  Column: BALANCE, Type: NUMBER, Length: 22
+
+Table: ABSENTDETECTED
+  Row Count: 4725
+  Column: ANIMAL_SK, Type: NUMBER, Length: 22
+  Column: TAG_ID, Type: VARCHAR2, Length: 50
+  Column: ORGANIZATION_ID, Type: VARCHAR2, Length: 50
+  Column: ORGANIZATION_NAME, Type: VARCHAR2, Length: 50
+  Column: LOCATIONID, Type: VARCHAR2, Length: 50
+  Column: LOCATION_NAME, Type: VARCHAR2, Length: 50
+  Column: ENCLOSUREID, Type: VARCHAR2, Length: 50
+  Column: ENCLOSURE_NAME, Type: VARCHAR2, Length: 50
+  Column: LAST_SEEN_DAY, Type: DATE, Length: 7
+  Column: ABSENT_DAY, Type: DATE, Length: 7
+  Column: ABSENT_DAY_US_FORMAT, Type: DATE, Length: 7
+  Column: ACTUAL_DETECTED_DAY, Type: VARCHAR2, Length: 50
+  Column: DETECTED_DAY, Type: VARCHAR2, Length: 50
+  Column: DAYS_BETWEEN_LAST_SEEN_AND_ABSENT_DAY, Type: NUMBER, Length: 22
+  Column: DAYS_ABSENT, Type: NUMBER, Length: 22
+  Column: TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_SECONDS, Type: NUMBER, Length: 22
+  Column: TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_MINUTES, Type: NUMBER, Length: 22
+  Column: TOTAL_TIME_SPENT_ON_LAST_SEEN_DAY_MI_SS, Type: VARCHAR2, Length: 50
+  Column: MIN_SCAN_START_TIME_LOCAL, Type: VARCHAR2, Length: 50
+  Column: MAX_SCAN_END_TIME_LOCAL, Type: VARCHAR2, Length: 50
+
+Table: HERDEXDATA
+  Row Count: 15077
+  Column: ID, Type: VARCHAR2, Length: 50
+  Column: LOCATIONID, Type: VARCHAR2, Length: 50
+  Column: LOCATION, Type: VARCHAR2, Length: 50
+  Column: ORGANIZATIONID, Type: VARCHAR2, Length: 128
+  Column: ORGNAME, Type: VARCHAR2, Length: 50
+  Column: ENCLOSUREID, Type: VARCHAR2, Length: 128
+  Column: ENCLOSURETYPE, Type: VARCHAR2, Length: 50
+  Column: BREED, Type: VARCHAR2, Length: 50
+  Column: BREEDER, Type: VARCHAR2, Length: 50
+  Column: CAUSEOFDELETE, Type: VARCHAR2, Length: 50
+  Column: IMFLASTUPDATE, Type: VARCHAR2, Length: 128
+  Column: INTRAMUSCULARFAT, Type: VARCHAR2, Length: 50
+  Column: LOTID, Type: VARCHAR2, Length: 50
+  Column: PURCHASEDATE, Type: VARCHAR2, Length: 50
+  Column: RECEIVINGDATE, Type: VARCHAR2, Length: 128
+  Column: MONTH, Type: NUMBER, Length: 22
+  Column: RFID, Type: VARCHAR2, Length: 50
+  Column: SECONDARYID, Type: VARCHAR2, Length: 50
+  Column: SEX, Type: VARCHAR2, Length: 50
+  Column: SIRE, Type: VARCHAR2, Length: 50
+  Column: TREATMENTWITHREMINDER, Type: VARCHAR2, Length: 50
+  Column: UNDERTREATMENT, Type: VARCHAR2, Length: 50
+  Column: WEIGHTINPOUNDORLBS, Type: NUMBER, Length: 22
+  Column: WEIGHTLASTUPDATE, Type: VARCHAR2, Length: 128
+  Column: RECEIVEDINMONTHS, Type: NUMBER, Length: 22
+  Column: INITIALWEIGHTINPOUNDORLBS, Type: NUMBER, Length: 22
+  Column: DIFFERENCEINWEIGHT, Type: NUMBER, Length: 22
+  Column: PRICEINUSDPERPOUNDORLBS, Type: VARCHAR2, Length: 50
+
+Table: TAGSCANDATA
+  Row Count: 183508
+  Column: ÏD, Type: NUMBER, Length: 22
+  Column: ANIMAL_SK, Type: NUMBER, Length: 22
+  Column: READER_SK, Type: NUMBER, Length: 22
+  Column: TAG_ID, Type: VARCHAR2, Length: 50
+  Column: READER_ID, Type: VARCHAR2, Length: 50
+  Column: ORGANIZATION, Type: VARCHAR2, Length: 50
+  Column: LOCATION, Type: VARCHAR2, Length: 50
+  Column: SCAN_DATE, Type: DATE, Length: 7
+  Column: SCAN_START_TIME_UTC_DATE_KEY, Type: NUMBER, Length: 22
+  Column: DAILY_TIME_SPENT_SECONDS, Type: NUMBER, Length: 22
+  Column: DAILY_TIME_SPENT_MINUTES, Type: NUMBER, Length: 22
+  Column: MAX_TAGSCAN_SK, Type: NUMBER, Length: 22
+  Column: REC_COUNT, Type: NUMBER, Length: 22
+  Column: DW_CREATED_DTTIME, Type: VARCHAR2, Length: 50
+  Column: DW_UPDATED_DTTIME, Type: VARCHAR2, Length: 50
+
+Table: TREATMENTDETAILS
+  Row Count: 530
+  Column: ID, Type: VARCHAR2, Length: 128
+  Column: ISDELETED, Type: VARCHAR2, Length: 50
+  Column: DELETEDDATE, Type: VARCHAR2, Length: 128
+  Column: LASTUPDATED, Type: VARCHAR2, Length: 128
+  Column: CREATEDBY, Type: VARCHAR2, Length: 128
+  Column: LASTUPDATEDBY, Type: VARCHAR2, Length: 128
+  Column: DELETEDBY, Type: VARCHAR2, Length: 128
+  Column: ANIMALID, Type: VARCHAR2, Length: 50
+  Column: AUTOREMINDER, Type: VARCHAR2, Length: 50
+  Column: DESCRIPTION, Type: VARCHAR2, Length: 50
+  Column: CREATEDAT, Type: VARCHAR2, Length: 128
+  Column: DOSELOGCOUNT, Type: NUMBER, Length: 22
+  Column: ORGANIZATION, Type: VARCHAR2, Length: 128
+  Column: LOCATION, Type: VARCHAR2, Length: 50
+  Column: ENCLOSURE, Type: VARCHAR2, Length: 50
+  Column: ISFROMPROTOCOL, Type: VARCHAR2, Length: 50
+  Column: MEDICINECOUNT, Type: NUMBER, Length: 22
+  Column: TREATMENTMEDICINES, Type: VARCHAR2, Length: 128
+  Column: PRESCRIPTIONDATE, Type: VARCHAR2, Length: 128
+  Column: PRESCRIPTIONNOTES, Type: VARCHAR2, Length: 50
+  Column: REMINDER, Type: VARCHAR2, Length: 50
+  Column: REMINDERCOUNT, Type: NUMBER, Length: 22
+  Column: TREATMENTID, Type: VARCHAR2, Length: 128
+  Column: TREATMENTTYPE, Type: VARCHAR2, Length: 128
+  Column: SICKNESSDETAILS, Type: VARCHAR2, Length: 50
+  Column: WEEK1WEIGHT, Type: NUMBER, Length: 22
+  Column: WEEK2WEIGHT, Type: NUMBER, Length: 22
+  Column: WEEK3WEIGHT, Type: NUMBER, Length: 22
+  Column: WEEK4WEIGHT, Type: NUMBER, Length: 22
+  Column: LASTMONTHSICK, Type: VARCHAR2, Length: 50
+  Column: RECOVEREDINCURRENTMONTH, Type: VARCHAR2, Length: 50
+
+Table: STUDENTS
+  Row Count: 2
+  Column: STUDENT_ID, Type: NUMBER, Length: 22
+  Column: FIRST_NAME, Type: VARCHAR2, Length: 50
+  Column: LAST_NAME, Type: VARCHAR2, Length: 50
+  Column: MONEY, Type: NUMBER, Length: 22
+
